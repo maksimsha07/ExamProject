@@ -74,8 +74,8 @@ class MainFrame : JFrame(){
 
         //Задание
         val funk = { x:Double ->  abs(2*x-x.pow(2)) } //Функция
-        val x = {t:Double -> (4-t*t)/(1+t*t*t)} //параметрически заданная
-        val y = {t:Double -> (t*t)/(1+t*t*t)} // функция
+        val x = {t:Double -> (4-t.pow(2))/(1+t.pow(3))} //параметрически заданная
+        val y = {t:Double -> (t.pow(2))/(1+t.pow(3))} // функция
 
         //Пул функция рисования
         val painters = mutableListOf<Painter>(cartesianPainter)
